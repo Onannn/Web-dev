@@ -1,0 +1,28 @@
+for(int i = 0; i < 6; i++) {
+        for(int j = 0; j < 4; j++) {
+            if(i == 0 || i == 5 || j == 0 || j == 3) {
+                System.out.print(5);
+            } else{
+                System.out.print(" ");
+            }
+
+        }
+        System.out.println("");
+    }
+
+}
+
+Scanner var = new Scanner(System.in);
+   System.out.print("Enter value for length");
+   float length = var.nextFloat();
+
+   System.out.print("Enter value for width");
+   float width = var.nextFloat(); 
+
+
+    float area = length*width;
+    float perimeter = 2 * (length + width);
+
+    System.out.println("The area is " +area);
+    System.out.print("The perimeter is " +perimeter);
+
